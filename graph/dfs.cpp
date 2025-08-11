@@ -82,3 +82,15 @@ int main()
 
     return 0;
 }
+
+/*int dfsHeight(unordered_map<int, list<int>> &adj, int node, int parent) {
+    int maxDepth = 0;
+    for (auto child : adj[node]) {
+        if (child != parent) {
+            int childDepth = dfsHeight(adj, child, node);
+            maxDepth = max(maxDepth, childDepth);
+        }
+    }
+    return maxDepth + 1;
+}*/
+
