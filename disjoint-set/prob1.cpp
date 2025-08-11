@@ -1,4 +1,4 @@
-// https://www.hackerearth.com/practice/data-structures/disjoint-data-strutures/basics-of-disjoint-data-structures/practice-problems/algorithm/city-and-campers/
+// https://www.hackerearth.com/practice/data-structures/disjoint-data-strutures/basics-of-disjoint-data-structures/practice-problems/algorithm/city-and-campers
 #include <bits/stdc++.h>
 using namespace std;
 const int N=1e5+10;
@@ -27,6 +27,7 @@ void uni(int a,int b){
 		if(ssize[a]<ssize[b]){
 			swap(a,b);
 		}
+        merge(a,b);
 		parent[b]=a;
 		ssize[a]+=ssize[b];
 	}
